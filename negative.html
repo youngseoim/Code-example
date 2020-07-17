@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    .container{
+      background-color: blue;
+    }
+    .clearfix::after{
+      content: "";
+      clear: both;
+      display: block;
+    }
+    .box{
+      background-color: red;
+      width:100px;
+      height: 100px;
+      border: 2px solid black;
+      /* box-sizing:content-box; */
+      margin: 50px;
+    }
+
+/* 원하는 옵션 주석 풀어서 확인하기 */
+
+    .box1{
+      /* float: right;
+      float: left; */
+    }
+    .box2{
+      /* float: right; */
+      /* float:left; */
+      /* margin-left: -100px; */
+      /* margin-right: -100px; */
+      /* margin-top: -100px; */
+      /* margin-bottom: -50%; */
+    }
+    .box3{
+      /* float: right; */
+      /* float: left; */
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+  <div class="box box1">
+    A
+  </div>
+  <div class="box box2">
+    B
+  </div>
+  <div class="box box3">
+    C
+  </div>
+</div>
+</body>
+</html>
